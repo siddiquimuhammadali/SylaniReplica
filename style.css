@@ -1,0 +1,302 @@
+@import url("navbar.css");
+
+/* top of nav style */
+.top-of-nav{
+    background-color: #316DC3;
+    text-align: center;
+    padding: 12px;
+}
+.top-of-nav i{
+    color: #ffff;
+    margin-left: 14px;
+    padding: 4px;
+    width: 25px;
+    border-radius: 10px;
+}
+.top-of-nav i:hover{
+    
+}
+.top-text{
+    font-size: 15px;
+    font-family: "Arial";
+    text-align: right;
+}
+.top-btn{
+    background-color:#F5F5F5;
+    font: 11px "Arial";
+    color: #427900;
+    padding: 9px 10px;
+    text-decoration: none!important;
+    border: solid .1px #427900;
+}
+/* /end top of nav */
+
+/* carousal style */
+.carousel-control-prev,.carousel-control-next{
+    background-color: rgba(8, 8, 8, 0.29);
+    height: 3%;
+    width: 5%;
+    padding: 34px 0px;
+    border-radius: 100%;
+    position: absolute;
+    top: 35%;
+    margin: 3%;
+}
+.carousel-control-prev,.carousel-control-next:hover{
+    background-color: rgba(48, 48, 48, 0.58);
+}
+.slider-time{
+    width: 100%;
+    height: 7px;
+    background-color:rgba(36, 36, 36, 0.30);
+    animation: slide 5s infinite;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes slide{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+/* /end carousal style */
+
+/* marquee dated */
+.marquee-dated{
+    background-color: #316DC3;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    z-index: -1;
+}
+/* marquee dated */
+
+/* Introduction style */
+.intro-heading{
+    color: #427900;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 38px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.intro-define{
+    margin: auto;
+    line-height: 28px;
+    font-size: 16px;
+    max-width: 88%;
+    text-align: justify;
+    color: #666666;
+}
+/* /End Introduction style */
+
+.after-intro-div{
+    /* background-color:#2755E9; */
+    padding: 40px 0px;
+    position: relative;
+    z-index: -1;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;	
+	background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.90)),url(images/2.jpeg);
+	background-attachment: fixed;
+}
+.after-intro-card{
+    /* background-color:#2755E9; */
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.after-intro-card-text{
+    font-family: "Open Sans";
+    font-size: 44px;
+    font-weight: bolder;
+    margin-top: 4%;
+}
+.after-intro-card-text2{
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 15px;
+}
+
+/* What We Are styles */
+.what-divs{
+    background-color:#fff;
+    padding: 30px 0px;
+    position: relative;
+    z-index: 1;
+    box-shadow: -5px 29px 59px -38px rgba(0,0,0,0.75);
+}
+/* .what-divs::Before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    width: 0%;
+    height: 0%;
+    box-sizing: border-box;
+    transition: all .8s ease;
+}
+.what-divs::After{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    width: 0%;
+    height: 0%;
+    box-sizing: border-box;
+    transition: all .8s ease;
+} */
+.what-divs:hover .what-divs::Before{
+    background-color: #666;
+    height: 70%;
+    width: 80%;
+}
+.what-we-text{
+    color: #316DC3;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3.5%;
+}
+/* /end What We Are */
+
+/* MISSION AND UPCOMING PROJETCS */
+.mission-main-div{
+    background-color: #fff;
+    position: relative;
+    z-index: -1;
+}
+.mission-text{
+    color: #316DC3;
+    font-size: 27px;
+    font-family: "Open Sans";
+    font-weight: bolder;
+}
+.mission-inside-text{
+    background-color: #F7F8FA;
+    cursor: pointer;
+    border: .1px solid #ddd;
+    padding: 17px 20px;
+    color: #316DC3;
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/* /END MISSION */
+
+/* Upcoming marquee */
+.upcoming-marquee{
+    height: 190px;
+    color: #666666;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bolder;
+    max-width: 80%;
+    text-align: left;
+}
+/* /end upcoming marquee */
+
+/* GAllERY STYLE */
+.gallery-div{
+    float: left;
+ /* background-color:;   */
+    overflow: hidden;
+    /* position: absolute;; */
+    /* z-index: 1; */
+}
+.gallery-div-img{
+    height: 130px;
+    width: 220px;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+.gallery-div-img:hover{
+    opacity: .3;
+    transform: scale(1.3);
+    border: solid 1px gray;
+}
+.gallery-div i{
+    position: absolute;
+    z-index: 12;
+    top: 10%;
+    left: 10%;
+}
+/* /END GALLERY */
+
+/* Fotter style */
+.fotter-div{
+    /* background-color: #25272E; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.94),rgba(0, 0, 0, 0.96)),url(images/4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;	
+    background-attachment: fixed;
+    color: #ccc!important;
+    float: left;
+    margin-top: 12%;
+    font-family: "Open Sans";
+    font-weight: bolder;
+    /* text-align: center; */
+    position: relative;
+    z-index: -1;
+}
+.fotter-div h5{
+    color: #ccc;
+    font-family: "Arial";
+    font-size: 18px;
+}
+.fotter-social h5{
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.fotter-social i{
+    background-color:#316DC3;
+    padding: 7px 5px;
+    width: 30px;
+    margin-left: 8px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.contact-div{
+    font-size: 16px;
+    color: #ccc;
+}
+.contact-div i{
+    margin-right:12px;
+    padding: 10px;
+}
+/* Fotter end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

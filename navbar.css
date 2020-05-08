@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: #F7F8FA;
+}
+.main-nav{
+    background-color:#F7F8FA;
+    padding: 7px 0px;
+    border: solid .1px #ddd;
+}
+/* for on slide */
+.sticky {
+    position: fixed;
+    top: 0;
+  }
+/* /on slide */
+
+
+.main-ul{
+    margin: 0;
+    color: white;
+    font-family: Arial;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 5%;
+
+}
+.main-li{
+    text-align: center;
+    padding: 17px 0px;
+}
+.main-a{
+    text-decoration: none!important;
+    color: #333333;
+    padding: 9px 18px;
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .6s;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 60px;
+}
+.main-a:hover{
+    color: white;
+    background-color:#316DC3;
+    border-radius: 60px; 
+}
+.active{
+    border-radius: 60px;
+    background-color: #316DC3;
+    color: #ffffff;
+}
+/* ----------/main-menu-end-------------------------- */
+
+
+
+
+/*----------- 1st sub menu ------------*/
+.one-sub-menu{
+    /* display: none; */
+}
+.one-sub-menu-ul{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 7%;
+    display: none;
+    /* overflow: hidden; */
+    width: 23.5%;
+    /* height: 0px; */
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+.one-sub-menu-li{
+    text-align: left;
+    line-height: 35px;
+    margin-left: -26%;
+    list-style: none;
+    padding: 0px 0px;
+    background-color: #fff;
+}
+.one-sub-menu-li:hover{
+    background-color: #316DC3;
+    color: white;
+    cursor: pointer;
+}
+
+.one-sub-menu-li:hover .one-sub-menu-a{
+    color: white;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.one-sub-menu-a{
+    transition: .3s;
+    text-decoration: none!important;
+    color: #666666;
+    font-size: 13px;
+    margin-left: 20px;
+    /* padding: 10px 0px; */
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.one-sub-menu-a:hover{
+    margin-left: 25px;
+    color: white;
+}
+ul li:hover .one-sub-menu-ul{
+    display: block!important;
+    /* height:110px; */
+    
+}
+
+
+/*----------- second sub menu -------------*/
+.second-sub-menu{
+    display: none;
+}
+.mass-ul,.second-sub-menu-ul{
+    list-style: none;
+    position: absolute;
+    left: 97.8%;
+    width: 90%;
+    top: 0%;
+}
+.mass-li,.second-sub-menu-li{
+    background-color:#fff;
+    margin-left:2.8%;
+}
+
+.mass-a,.second-sub-menu-a{
+    text-decoration: none!important;
+    font-size: 13px;
+    color: #666666;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-left: 20px;
+    transition: .3s;  
+}
+.second-sub-menu-li:hover .second-sub-menu-a{
+    color: #ffffff;
+    margin-left: 25px;
+}
+.second-sub-menu-li:hover{
+    background-color:#316DC3 ;
+}
+.one-sub-menu-li:hover .second-sub-menu{
+    display: block;
+}
+.angel-r{
+    float: right;
+    margin-right: 7%;
+    margin-top: 5%;
+}
+/* -----------/end second sub menu--------- */
+
+/* mass-training-sub-menu */
+.mass-train{
+    display: none;
+}
+.mass-li:hover .mass-a{
+    /* background-color:#316DC3; */
+    color: #ffffff;
+    margin-left: 25px;
+}
+.mass-li:hover{
+    background-color: #316DC3;
+}
+.second-sub-menu-li:hover .mass-train{
+    display: block;
+}
+/* /end mass sub menu */
+
+/* media queery */
+@media screen and (min-width: 765px){
+
+} 
